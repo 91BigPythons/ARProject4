@@ -1,16 +1,23 @@
-# City Destroyer: Immersive Mixed Reality Game Concept
-Overview
+# Building Destroyer
 
-"City Destroyer" is an exhilarating mixed reality (MR) game that immerses players into a colossal avatar tasked with the annihilation of sprawling urban environments. Leveraging the power of Unity, the leading game development platform, this project aims to merge the physical and digital realms, providing a unique gameplay experience. By transforming ordinary spaces like tables, floors, or sofas into dynamic cityscapes, "City Destroyer" invites players into a world where their living room becomes the epicenter of destruction.
+This project develops a destructible building simulation for augmented reality (AR) environments on the Meta Quest 3 platform. It leverages hand tracking and physical effects that respond to hand movements for interactive building destruction.
 
-Gameplay Mechanics
+Building Model Source: The building model is sourced from Unity assets available online. Upon launching the app, the model appears on the ground in front of the player. Players can then interact with the structure, initiating destruction by touching it with their hands.
 
-In "City Destroyer," players embody a towering giant, their mission: to wreak havoc upon intricate city models projected onto real-world surfaces through MR technology. The game incorporates physical movement, encouraging players to walk around their play area to discover and demolish every part of the virtual city. As the destruction unfolds, players must also dodge missiles launched by virtual aircraft, adding a layer of strategy and physicality to the gameplay. The challenge escalates with the progression of levels, introducing more complex city layouts and aggressive aerial assaults.
+Destruction Mechanics: The building model is structured in two layers: a complete building overlay and underlying fragmented components. Initially, the complete building is visible. Upon detecting the first touch, the complete model is hidden, revealing the fragmented structure. This transition triggers a particle effect at the point of impact, applying a force that simulates destruction. The logic also applies to collisions with specific building components.
 
-Technology and Compatibility
+Installation Instructions:
 
-At the core of "City Destroyer" is the utilization of the Meta XR SDK, a cutting-edge framework designed for creating immersive extended reality experiences. This game is specifically adapted for the Meta Quest 2, Meta Quest Pro, and the upcoming Meta Quest 3 devices, ensuring a wide range of compatibility and accessibility. The MR experience is refined through the Meta Quest 3, chosen for its advanced capabilities in spatial tracking, rendering, and user interaction, providing a seamless integration of virtual content with the physical world.
+1. Download the BuildingDestroy.apk file.
+2. Install the APK using SideQuest on a desktop.
+3. Launch "My Project(1)" from the "Unknown Sources" section in the library on a Meta Quest 3 device synced with SideQuest.
+Note: This application has only been tested on Meta Quest 3; compatibility with other Android-based platforms is not guaranteed.
 
-Development and Release
+Future Development Goals:
 
-The development process of "City Destroyer" is centered around Unity, allowing for a streamlined workflow that encompasses both the creation of immersive 3D environments and the integration of Meta's XR technology. The project's iterative testing phase will be conducted using the Meta Quest 3, ensuring optimal performance and player immersion. Upon completion, "City Destroyer" will be launched through Meta's beta mode, offering the gaming community an early glimpse into this revolutionary MR experience.
+1. Expansion to City-Scale Destruction: The current work is only part of the initial plan. The original plan was to create a whole destructible city, but due to the high cost of building models and their fragmented versions, I ended up making only one building as a demonstration. If I copy the model multiple times and adjust the parameters, I can achieve the effect of a city, but it will still appear that all the buildings in the city are too similar. Therefore, my future goal is to create a realistic city (rather than a basic 3d building model) to destroy.
+2. Enhanced Destruction Effects: Improve the realism of the destruction effects, specifically the explosion visuals, to provide a more immersive experience.
+3. Gameplay Complexity: Introduce enemy interactions, such as shooting, requiring players to dodge attacks while engaging in destruction.
+4. Room Scanning Integration: Although I implemented the scanning of rooms through meta quest3 in the previous milestone, I encountered difficulties when applying the scanned room model. In the future, I plan to solve this problem so that the simulated city can appear on designated furniture (such as sofas, tables), not just on the ground.
+
+
