@@ -1,4 +1,4 @@
-# Building Destroyer
+ # Building Destroyer
 
 This project develops a destructible building simulation for augmented reality (AR) environments on the Meta Quest 3 platform. It leverages hand tracking and physical effects that respond to hand movements for interactive building destruction.
 
@@ -8,7 +8,7 @@ Destruction Mechanics: The building model is structured in two layers: a complet
 
 Installation Instructions:
 
-1. Download the BuildingDestroy.apk file.
+1. Download the BuildingDestroy.apk file through this link: https://drive.google.com/file/d/1bDZGHzRQq1-ynZQdPFDuZC-zscj5sLqq/view?usp=drive_link .
 2. Install the APK using SideQuest on a desktop.
 3. Launch "My Project(1)" from the "Unknown Sources" section in the library on a Meta Quest 3 device synced with SideQuest.
 
