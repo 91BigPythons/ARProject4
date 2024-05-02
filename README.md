@@ -11,7 +11,8 @@ Installation Instructions:
 1. Download the BuildingDestroy.apk file.
 2. Install the APK using SideQuest on a desktop.
 3. Launch "My Project(1)" from the "Unknown Sources" section in the library on a Meta Quest 3 device synced with SideQuest.
-Note: This application has only been tested on Meta Quest 3; compatibility with other Android-based platforms is not guaranteed.
+
+(Note: This application has only been tested on Meta Quest 3; compatibility with other Android-based platforms is not guaranteed.)
 
 Future Development Goals:
 
