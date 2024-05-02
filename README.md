@@ -2,9 +2,9 @@
 
 This project develops a destructible building simulation for augmented reality (AR) environments on the Meta Quest 3 platform. It leverages hand tracking and physical effects that respond to hand movements for interactive building destruction.
 
-Building Model Source: The building model is sourced from Unity assets available online. Upon launching the app, the model appears on the ground in front of the player. Players can then interact with the structure, initiating destruction by touching it with their hands.
+Model: The building model is sourced from Unity assets available online. Upon launching the app, the model appears on the ground in front of the player. Players can then interact with the structure, initiating destruction by touching it with their hands.
 
-Destruction Mechanics:(You can see code details in DestructableBuilding.cs) The building model is structured in two layers: a complete building overlay and underlying fragmented components. Initially, the complete building is visible. Upon detecting the first touch, the complete model is hidden, revealing the fragmented structure. This transition triggers a particle effect at the point of impact, applying a force that simulates destruction. The logic also applies to collisions with specific building components.
+Main Gaming Logic:(You can see code details in DestructableBuilding.cs) The building model is structured in two layers: a complete building overlay and underlying fragmented components. Initially, the complete building is visible. Upon detecting the first touch, the complete model is hidden, revealing the fragmented structure. This transition triggers a particle effect at the point of impact, applying a force that simulates destruction. The logic also applies to collisions with specific building components.
 
 Installation Instructions:
 
